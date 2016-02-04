@@ -1,4 +1,4 @@
 KPCScaleToFillNSImageView
 =========================
 
-A simple NSImageView subclass that does exactly one thing: the Cocoa/OSX equivalent of UIImageScaleToFill.
+A simple NSImageView subclass that does exactly one additional thing: the Cocoa/OSX equivalent of UIKit's UIImageScaleToFill mode.
