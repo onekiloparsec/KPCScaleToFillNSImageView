@@ -49,12 +49,13 @@
 		return;
 	}
 
+    __weak KPCScaleToFillNSImageView *weakSelf = self;
 	NSImage *scaleToFillImage = [NSImage imageWithSize:self.bounds.size
 											   flipped:NO
                                         drawingHandler:^BOOL(NSRect dstRect) {
 
                                             NSSize imageSize = [image size];
-                                            NSSize imageViewSize = self.bounds.size; // Yes, do not use dstRect.
+                                            NSSize imageViewSize = weakSelf.bounds.size; // Yes, do not use dstRect.
 
                                             NSSize newImageSize = imageSize;
 
